@@ -11,13 +11,41 @@ class LLM:
 
     def generate_daily_report(self, markdown_content, dry_run=False):
         # 构建一个用于生成报告的提示文本，要求生成的报告包含新增功能、主要改进和问题修复
-        prompt = f"以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\n\n{markdown_content}"
-        
+        # prompt = f"以下是项目的最新进展，根据功能合并同类项，形成一份简报，至少包含：1）新增功能；2）主要改进；3）修复问题；:\n\n{markdown_content}"
+        system_prompt = """
+        你是一名资深软件项目经理助理，擅长整理技术变更记录和开发日志。
+
+        你的任务是：
+        1. 从给定的项目进展内容中提取有效信息
+        2. 合并同类功能
+        3. 去除重复描述
+        4. 按类别归纳输出
+
+        输出必须满足以下要求：
+        - 使用 Markdown 格式
+        - 必须包含以下三个一级标题：
+          ## 新增功能
+          ## 主要改进
+          ## 问题修复
+        - 每个标题下使用无序列表
+        - 内容要简洁专业
+        - 不要编造内容
+        - 如果某类没有内容，写：暂无
+        - 不要输出额外解释
+        - 输出使用中文
+        """
+
+        user_prompt = f"""
+        以下是项目的最新开发进展记录，请整理成日报简报：
+
+        {markdown_content}
+        """
         if dry_run:
             # 如果启用了dry_run模式，将不会调用模型，而是将提示信息保存到文件中
             LOG.info("Dry run mode enabled. Saving prompt to file.")
             with open("daily_progress/prompt.txt", "w+") as f:
-                f.write(prompt)
+                f.write(system_prompt)
+                f.write(user_prompt)
             LOG.debug("Prompt saved to daily_progress/prompt.txt")
             return "DRY RUN"
 
@@ -27,12 +55,14 @@ class LLM:
         try:
             # 调用OpenAI GPT模型生成报告
             response = self.client.chat.completions.create(
-                model="gpt-3.5-turbo",  # 指定使用的模型版本
+                model="deepseek-chat",  # 建议换模型
                 messages=[
-                    {"role": "user", "content": prompt}  # 提交用户角色的消息
-                ]
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                temperature=0.3  # 降低发散
             )
-            LOG.debug("GPT response: {}", response)
+            LOG.debug("deepseek response: {}", response)
             # 返回模型生成的内容
             return response.choices[0].message.content
         except Exception as e:
