@@ -12,12 +12,12 @@ class Config:
             
             # 使用环境变量或配置文件的 GitHub Token
             self.github_token = os.getenv('GITHUB_TOKEN', config.get('github_token'))
-            print(self.github_token)
+
             # 初始化电子邮件设置
             self.email = config.get('email', {})
             # 使用环境变量或配置文件中的电子邮件密码
             self.email['password'] = os.getenv('EMAIL_PASSWORD', self.email.get('password', ''))
-            print(self.email['password'])
+
 
             self.subscriptions_file = config.get('subscriptions_file')
             # 默认每天执行
