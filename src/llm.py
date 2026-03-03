@@ -35,10 +35,11 @@ class LLM:
         try:
             # 调用OpenAI GPT模型生成报告
             response = self.client.chat.completions.create(
-                model="gpt-4o-mini",  # 指定使用的模型版本
-                messages=messages
+                model="deepseek-chat",  # 建议换模型
+                messages=messages,
+                temperature=0.3  # 降低发散
             )
-            LOG.debug("GPT response: {}", response)
+            LOG.debug("deepseek response: {}", response)
             # 返回模型生成的内容
             return response.choices[0].message.content
         except Exception as e:

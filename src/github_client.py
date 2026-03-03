@@ -73,17 +73,18 @@ class GitHubClient:
     def export_progress_by_date_range(self, repo, days):
         today = date.today()  # 获取当前日期
         since = today - timedelta(days=days)  # 计算开始日期
-        
+
         updates = self.fetch_updates(repo, since=since.isoformat(), until=today.isoformat())  # 获取指定日期范围内的更新
-        
+
         repo_dir = os.path.join('daily_progress', repo.replace("/", "_"))  # 构建目录路径
         os.makedirs(repo_dir, exist_ok=True)  # 确保目录存在
-        
+
         # 更新文件名以包含日期范围
         date_str = f"{since}_to_{today}"
         file_path = os.path.join(repo_dir, f'{date_str}.md')  # 构建文件路径
-        
-        with open(file_path, 'w') as file:
+
+        # 指定使用UTF-8编码打开文件
+        with open(file_path, 'w', encoding='utf-8') as file:
             file.write(f"# Progress for {repo} ({since} to {today})\n\n")
             file.write(f"\n## Issues Closed in the Last {days} Days\n")
             for issue in updates['issues']:  # 写入在指定日期内关闭的问题

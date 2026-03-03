@@ -60,7 +60,7 @@ class ReportGenerator:
 
     def generate_report_by_date_range(self, markdown_file_path, days):
         # 生成特定日期范围的报告，流程与日报生成类似
-        with open(markdown_file_path, 'r') as file:
+        with open(markdown_file_path, 'r',encoding="utf-8") as file:
             markdown_content = file.read()
 
         report = self.llm.generate_daily_report(markdown_content)
