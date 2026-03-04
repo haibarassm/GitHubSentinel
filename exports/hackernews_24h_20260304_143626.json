@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 47242765,
+    "title": "Nobody Gets Promoted for Simplicity",
+    "url": "https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/",
+    "score": 144,
+    "by": "SerCe",
+    "time": 1772595618,
+    "descendants": 55,
+    "text": ""
+  },
+  {
+    "id": 47242725,
+    "title": "California's Digital Age Assurance Act, and FOSS",
+    "url": "https://runxiyu.org/comp/ab1043/",
+    "score": 76,
+    "by": "todsacerdoti",
+    "time": 1772595378,
+    "descendants": 57,
+    "text": ""
+  },
+  {
+    "id": 47242453,
+    "title": "LLMs can unmask pseudonymous users at scale with surprising accuracy",
+    "url": "https://arstechnica.com/security/2026/03/llms-can-unmask-pseudonymous-users-at-scale-with-surprising-accuracy/",
+    "score": 52,
+    "by": "Gagarin1917",
+    "time": 1772593232,
+    "descendants": 32,
+    "text": ""
+  },
+  {
+    "id": 47242567,
+    "title": "Just Send the Prompt",
+    "url": "https://justsendtheprompt.com/",
+    "score": 37,
+    "by": "medalblue",
+    "time": 1772594079,
+    "descendants": 21,
+    "text": ""
+  },
+  {
+    "id": 47242342,
+    "title": "Mac external displays for designers and developers, part 2 (2022)",
+    "url": "https://bjango.com/articles/macexternaldisplays2/",
+    "score": 32,
+    "by": "fragmede",
+    "time": 1772592185,
+    "descendants": 18,
+    "text": ""
+  },
+  {
+    "id": 47242637,
+    "title": "Speculative Speculative Decoding (SSD)",
+    "url": "https://arxiv.org/abs/2603.03251",
+    "score": 30,
+    "by": "E-Reverance",
+    "time": 1772594660,
+    "descendants": 3,
+    "text": ""
+  },
+  {
+    "id": 47243069,
+    "title": "A CPU that runs entirely on GPU",
+    "url": "https://github.com/robertcprice/nCPU",
+    "score": 25,
+    "by": "cypres",
+    "time": 1772598632,
+    "descendants": 9,
+    "text": ""
+  },
+  {
+    "id": 47242432,
+    "title": "Stop Trying to Hand Trump a Censorship Weapon",
+    "url": "https://www.techdirt.com/2026/03/03/ron-wyden-is-begging-his-colleagues-to-stop-trying-to-hand-trump-a-censorship-weapon/",
+    "score": 11,
+    "by": "HotGarbage",
+    "time": 1772593066,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242657,
+    "title": "AP brass to staff: Resistance to AI is 'futile'",
+    "url": "https://www.semafor.com/article/03/03/2026/ap-brass-to-staff-resistance-to-ai-is-futile",
+    "score": 9,
+    "by": "healsdata",
+    "time": 1772594783,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242958,
+    "title": "It's official: Hiring managers aren't reading your Résumé",
+    "url": "https://www.businessinsider.com/hiring-managers-arent-reading-resumes-slop-2026-3",
+    "score": 7,
+    "by": "KnuthIsGod",
+    "time": 1772597460,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242739,
+    "title": "Giving LLMs a personality is just good engineering",
+    "url": "https://www.seangoedecke.com/giving-llms-a-personality/",
+    "score": 7,
+    "by": "dboon",
+    "time": 1772595468,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242932,
+    "title": "I Just Returned from China. We Are Not Winning",
+    "url": "https://www.nytimes.com/2026/02/10/opinion/china-ai-ev-trump.html",
+    "score": 6,
+    "by": "nothrowaways",
+    "time": 1772597178,
+    "descendants": 3,
+    "text": ""
+  },
+  {
+    "id": 47242853,
+    "title": "OpenAI is working on its own GitHub competitor",
+    "url": "https://www.neowin.net/news/openai-is-reportedly-working-on-its-own-github-competitor/",
+    "score": 6,
+    "by": "bundie",
+    "time": 1772596495,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242841,
+    "title": "Dr. Jebra Faushay: \"The 80s: You Just Had to Be There\"",
+    "url": "https://twitter.com/JebraFaushay/status/2015608814385402024",
+    "score": 6,
+    "by": "pkaeding",
+    "time": 1772596421,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243272,
+    "title": "Agentic Engineering Patterns",
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/",
+    "score": 5,
+    "by": "r4um",
+    "time": 1772600437,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243277,
+    "title": "A Crisis in the Alps: Airbnb, Climate Change and Americans",
+    "url": "https://www.nytimes.com/2026/03/02/travel/french-alps-problems-overdevelopment-climate-change.html",
+    "score": 4,
+    "by": "RestlessMind",
+    "time": 1772600475,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242849,
+    "title": "Ask HN: What is the \"Control Plane\" for local AI agents?",
+    "url": "https://news.ycombinator.com/item?id=47242849",
+    "score": 4,
+    "by": "denis4inet",
+    "time": 1772596473,
+    "descendants": 3,
+    "text": "&lt;a href=&quot;https:&#x2F;&#x2F;ibb.co&#x2F;v6QLjdBY&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.ibb.co&#x2F;S4dV3mxr&#x2F;Agents-Orchestration.png&quot; alt=&quot;Agents-Orchestration&quot; border=&quot;0&quot;&gt;&lt;&#x2F;a&gt;<p>I’ve been running an increasing number of local coding agents (Claude Code, Codex CLI, OpenCode, etc.) and I’ve hit a wall: orchestration and state visibility.<p>When you have multiple agents working on different sub-tasks in a single repo, terminal logs become unmanageable. I find myself needing a &quot;Mission Control&quot; — a centralized tracking system that acts as a bridge between my local terminal sessions and a high-level UI.<p>The Architecture I’m testing:\nI’m currently experimenting with using GitHub Issues as a temporary backend for agent state:<p>On Session Start: The agent hits a hook and creates&#x2F;updates a GitHub Issue.<p>On Idle&#x2F;Output: The agent posts its findings&#x2F;diffs as a comment.<p>Human-in-the-loop: I can reply to the issue from my phone&#x2F;web, and the local CLI picks up the comment to continue or pivot.<p>The Problem:\nGitHub Issues (and Jira&#x2F;Trello) weren&#x27;t built for the high-frequency event loop of an AI agent. The UX feels sluggish, and there’s no native concept of a &quot;streaming session&quot; or &quot;agent heartbeats.&quot;<p>My Questions to HN:<p>Is there an emerging SaaS or self-hosted solution that acts as a Jira for Agents?<p>Are people building custom &quot;Agent Dashboards&quot; that integrate with local CLIs, or is everyone just piping everything to stdout?<p>If you’re managing 5+ agents working on a codebase simultaneously, how do you track their progress and intervene without context-switching between 5 terminal tabs?<p>I’ve sketched out a flow where GitHub Issues acts as the hub (linking Codex, Claude Code, and OpenClaw), but I’m looking for something more purpose-built.<p>Has anyone seen a project that addresses the Control Plane problem for local agents?"
+  },
+  {
+    "id": 47242448,
+    "title": "LexisNexis confirms React2Shell powered data breach",
+    "url": "https://www.bleepingcomputer.com/news/security/lexisnexis-confirms-data-breach-as-hackers-leak-stolen-files/",
+    "score": 4,
+    "by": "esaym",
+    "time": 1772593182,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242297,
+    "title": "Show HN: Term-CLI – interactive terminals for AI agents (for SSH/TUI/REPL flows)",
+    "url": "https://github.com/EliasOenal/term-cli",
+    "score": 4,
+    "by": "eliasoe",
+    "time": 1772591847,
+    "descendants": 0,
+    "text": "Agents can run non-interactive commands, but they often fail once a workflow needs a real terminal (SSH sessions, installers, debuggers, REPLs, TUIs). I built term-cli so an agent can drive an interactive terminal session (keystrokes in, output out, wait for prompts). And it comes with agent skill for easy integration.<p>It supports in-band file transfer: the agent can move files through the terminal stream itself (same channel as the interactive session), which is useful when the agent doesn’t have scp&#x2F;sftp, shared volumes, or direct filesystem access across boundaries.<p>Recent example: My Claude Opus was SSH&#x27;d into a server and ended up at a Firejail shell running inside a Docker container. It pushed a Python file in via term-cli, moving it across SSH → Docker → Firejail over the terminal channel, and explicitly commented how it was surprised this worked end-to-end.<p>And it comes with the companion tool term-assist, so agents can bring in their human to handle credentials and MFA: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=A70tZEVqSOQ\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=A70tZEVqSOQ</a>"
+  },
+  {
+    "id": 47242294,
+    "title": "The secret green shelters that feed London's cabbies (2018)",
+    "url": "https://www.bbc.com/travel/article/20180430-the-secret-green-shelters-that-feed-londons-cabbies",
+    "score": 4,
+    "by": "1659447091",
+    "time": 1772591809,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243811,
+    "title": "How Anonymous Bettors Cashed in on the Iran Strike, Hours Before It Happened",
+    "url": "https://www.nytimes.com/2026/03/03/upshot/prediction-markets-iran-strikes.html",
+    "score": 3,
+    "by": "jbegley",
+    "time": 1772605101,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243529,
+    "title": "What clues reveal about a possible Windows 12",
+    "url": "https://www.pcworld.com/article/3068331/windows-12-rumors-features-pricing-everything-we-know-so-far.html",
+    "score": 3,
+    "by": "XzetaU8",
+    "time": 1772602750,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243006,
+    "title": "CuTe Layout Representation and Algebra",
+    "url": "https://arxiv.org/abs/2603.02298",
+    "score": 3,
+    "by": "matt_d",
+    "time": 1772597957,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242827,
+    "title": "A Few Claude Skills for R Users",
+    "url": "https://rworks.dev/posts/claude-skills-for-r-users",
+    "score": 3,
+    "by": "ionychal",
+    "time": 1772596291,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242738,
+    "title": "Israel use iPhone backdoor against Journalists",
+    "url": "https://twitter.com/BackupJeffx/status/2028917525170319811",
+    "score": 3,
+    "by": "smashah",
+    "time": 1772595449,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242855,
+    "title": "Show HN: The Janitor – A 58MB Rust static analyzer to block AI-generated PR slop",
+    "url": "https://github.com/GhrammR/the-janitor",
+    "score": 3,
+    "by": "GhrammR",
+    "time": 1772596500,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242536,
+    "title": "News Corp, Meta in AI Content Licensing Deal Worth Up to $50M a Year",
+    "url": "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244",
+    "score": 3,
+    "by": "bookofjoe",
+    "time": 1772593897,
+    "descendants": 3,
+    "text": ""
+  },
+  {
+    "id": 47243791,
+    "title": "Windows 12 will need 40 TOPS AI NPU chip to run",
+    "url": "https://tbreak.com/windows-12-leaked-2026-ai-npu-requirement/",
+    "score": 2,
+    "by": "KnuthIsGod",
+    "time": 1772604926,
+    "descendants": 2,
+    "text": ""
+  },
+  {
+    "id": 47243818,
+    "title": "How Mossad hacked traffic cameras to track Ayatollah Khamenei",
+    "url": "https://www.google.com/search?q=How+Mossad+hacked+traffic+cameras+to+track+Ayatollah+Khamenei",
+    "score": 2,
+    "by": "asdefghyk",
+    "time": 1772605151,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47243804,
+    "title": "Better JIT for Postgres",
+    "url": "https://github.com/vladich/pg_jitter",
+    "score": 2,
+    "by": "vladich",
+    "time": 1772605030,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243717,
+    "title": "FBI stymied by Apple's Lockdown Mode after seizing journalist's iPhone",
+    "url": "https://arstechnica.com/tech-policy/2026/02/fbi-stymied-by-apples-lockdown-mode-after-seizing-journalists-iphone/",
+    "score": 2,
+    "by": "alwillis",
+    "time": 1772604359,
+    "descendants": 2,
+    "text": ""
+  },
+  {
+    "id": 47243697,
+    "title": "Human-written code died in 2025. Code reviews will die in 2026",
+    "url": "https://www.latent.space/p/reviews-dead",
+    "score": 2,
+    "by": "tdchaitanya",
+    "time": 1772604232,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47243658,
+    "title": "Amazon S3 Paper Cuts",
+    "url": "https://arturdryomov.dev/posts/amazon-s3-paper-cuts/",
+    "score": 2,
+    "by": "ming13",
+    "time": 1772603921,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243537,
+    "title": "Post-Visual Web: Designing pages for agents, not readers",
+    "url": "https://salah.louizy.com/blog/post-visual-web/",
+    "score": 2,
+    "by": "losalah",
+    "time": 1772602820,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243473,
+    "title": "Show HN: Mindspend – Track how you feel about your spending, not just numbers",
+    "url": "https://www.mindspend.app/",
+    "score": 2,
+    "by": "mogic",
+    "time": 1772602226,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243317,
+    "title": "Ask HN: Who's hiring but companies that don't have AI mandates?",
+    "url": "https://news.ycombinator.com/item?id=47243317",
+    "score": 2,
+    "by": "ares623",
+    "time": 1772600853,
+    "descendants": 2,
+    "text": "I&#x27;m looking for companies that don&#x27;t have AI mandates.<p>I suppose this can be interpreted in two ways:<p>- no mandate that forces the use of AI (employees are free to use them or not at their discretion and team dynamics)<p>- or the opposite, a mandate to enforce that AI should not be used (I suspect this will be even rarer?)"
+  },
+  {
+    "id": 47243267,
+    "title": "Denoising my Life: Part 1",
+    "url": "https://adityashrishpuranik.com/writing/denoising-my-life",
+    "score": 2,
+    "by": "adityapuranik99",
+    "time": 1772600409,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242985,
+    "title": "WSJ Opinion: The A.I. Data Center Backlash",
+    "url": "https://www.wsj.com/video/series/journal-editorial-report/wsj-opinion-the-ai-data-center-backlash/4CDA72C7-968A-4581-82E3-2CFB12E89B43",
+    "score": 2,
+    "by": "1vuio0pswjnm7",
+    "time": 1772597691,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242981,
+    "title": "AI knows everything – what should learning look like for my kids(8-12Y)",
+    "url": "https://searchsaga.vercel.app/",
+    "score": 2,
+    "by": "aadivar",
+    "time": 1772597668,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243036,
+    "title": "Indefinite Book Club Hiatus",
+    "url": "https://whatever.scalzi.com/2026/03/03/indefinite-book-club-hiatus/",
+    "score": 2,
+    "by": "cdrnsf",
+    "time": 1772598320,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242794,
+    "title": "General-Purpose Psychology Agent (Claude Code)",
+    "url": "https://github.com/safety-quotient-lab/psychology-agent",
+    "score": 2,
+    "by": "9wzYQbTYsAIc",
+    "time": 1772595964,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242485,
+    "title": "Current state of OpenClaw and bot protections",
+    "url": "https://proxybase.xyz/blog/openclaw-bot-protections",
+    "score": 2,
+    "by": "m00dy",
+    "time": 1772593536,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242434,
+    "title": "YGG, Largest French Torrent Tracker, Hacked",
+    "url": "https://yggleak.top/fr/home/ygg-dossier",
+    "score": 2,
+    "by": "TechSquidTV",
+    "time": 1772593068,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242303,
+    "title": "Yes... and...",
+    "url": "https://htmx.org/essays/yes-and/",
+    "score": 2,
+    "by": "rammy1234",
+    "time": 1772591876,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47243928,
+    "title": "npmx: a fast, modern browser for the npm registry",
+    "url": "https://npmx.dev/blog/alpha-release",
+    "score": 1,
+    "by": "OuterVale",
+    "time": 1772606059,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243796,
+    "title": "Earthquake-Proof Foundations",
+    "url": "https://practical.engineering/blog/2026/3/3/earthquake-proof-foundations",
+    "score": 1,
+    "by": "vismit2000",
+    "time": 1772604968,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243909,
+    "title": "Feature led building vs. user led building",
+    "url": "https://salah.louizy.com/blog/feature-led-building-vs-user-led-building/",
+    "score": 1,
+    "by": "losalah",
+    "time": 1772605925,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243907,
+    "title": "I used the new Linux Terminal on Android and I'm impressed",
+    "url": "https://www.makeuseof.com/used-new-linux-terminal-on-android-impressed/",
+    "score": 1,
+    "by": "thunderbong",
+    "time": 1772605918,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243776,
+    "title": "Show HN: PardusAI – Data Science Agent (Not 2026 YC)",
+    "url": "https://pardusai.org/",
+    "score": 1,
+    "by": "jasonEinstien",
+    "time": 1772604801,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243704,
+    "title": "Apple Does Fusiom",
+    "url": "https://om.co/2026/03/03/apple-does-fusion/",
+    "score": 1,
+    "by": "noahmbarr",
+    "time": 1772604302,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243738,
+    "title": "Show HN: Deploy OpenClaw in 60 Seconds",
+    "url": "http://deployclaw.ai/",
+    "score": 1,
+    "by": "Creator-io",
+    "time": 1772604505,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243647,
+    "title": "Triage Report",
+    "url": "https://tria.ge/260303-v3afzaht5y/behavioral2",
+    "score": 1,
+    "by": "KaoruAK",
+    "time": 1772603854,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47243641,
+    "title": "The dry and the wet burn together: On the war against Iran",
+    "url": "https://www.lrb.co.uk/blog/2026/march/the-dry-and-the-wet-burn-together",
+    "score": 1,
+    "by": "mitchbob",
+    "time": 1772603807,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47243636,
+    "title": "The Unreasonable Effectiveness of Nonstandard Analysis (2020)",
+    "url": "https://www.alphaxiv.org/abs/1508.07434",
+    "score": 1,
+    "by": "measurablefunc",
+    "time": 1772603786,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243626,
+    "title": "Show HN: I can't code – I built a bonded execution engine for AI agents anyway",
+    "url": "https://github.com/selfradiance/agentgate/blob/main/docs/manifesto.md",
+    "score": 1,
+    "by": "selfradiance",
+    "time": 1772603665,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47243815,
+    "title": "Show HN: Hacking Sony A6000 for Fun",
+    "url": "https://docodethatmatters.com/hacking-sony-a6000-for-modernization/",
+    "score": 1,
+    "by": "skittleson",
+    "time": 1772605116,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243572,
+    "title": "w0rdz aRe 1mpoRtAnt",
+    "url": "https://blog.jim-nielsen.com/2026/w0rdz-are-1mportant/",
+    "score": 1,
+    "by": "Curiositry",
+    "time": 1772603210,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243837,
+    "title": "Redesigning Mathematics for Elegant Physics",
+    "url": "https://twitter.com/devrimyasar/status/2029006461267857637",
+    "score": 1,
+    "by": "aesopsfable",
+    "time": 1772605296,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243891,
+    "title": "Show HN: Deploy OpenClaw in Seconds",
+    "url": "https://deplyclaw.ai/",
+    "score": 1,
+    "by": "Creator-io",
+    "time": 1772605784,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243516,
+    "title": "Show HN: HumanRoot – Signed proof of human authorization for AI agents",
+    "url": "https://github.com/Thinklanceai/humanroot",
+    "score": 1,
+    "by": "thinklanceai",
+    "time": 1772602623,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243474,
+    "title": "Claude vs. US Govt: OpenAI Gamble",
+    "url": "https://www.youtube.com/watch?v=Ph8CrTNlWbM",
+    "score": 1,
+    "by": "ashutosh0707",
+    "time": 1772602239,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243614,
+    "title": "Attacker can bypass cryptography and prove mathematically impossible statements",
+    "url": "https://osec.io/blog/2026-03-03-zkvms-unfaithful-claims/",
+    "score": 1,
+    "by": "nailer",
+    "time": 1772603574,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243464,
+    "title": "Generate a production-ready constitution.md or Claude.md for spec driven dev",
+    "url": "https://younss.github.io/ConstitutionKit/",
+    "score": 1,
+    "by": "younss",
+    "time": 1772602155,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243609,
+    "title": "DualPath: Breaking the Storage Bandwidth Bottleneck in Agentic LLM Inference",
+    "url": "https://arxiv.org/abs/2602.21548",
+    "score": 1,
+    "by": "nsoonhui",
+    "time": 1772603506,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243433,
+    "title": "Stocklens Software",
+    "url": "https://stocklnsss.lovable.app",
+    "score": 1,
+    "by": "StockLens_1",
+    "time": 1772601899,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243542,
+    "title": "Lentil – LLM Powered Linting",
+    "url": "https://github.com/Haizzz/lentil",
+    "score": 1,
+    "by": "haizzz",
+    "time": 1772602868,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243430,
+    "title": "Mac Has Hidden VRAM [video]",
+    "url": "https://www.youtube.com/watch?v=nxCtScEImew",
+    "score": 1,
+    "by": "goosebump",
+    "time": 1772601854,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243379,
+    "title": "Show HN: Offline AI That Analyzes Your Health Data with Evidence-Based Reasoning",
+    "url": "https://twitter.com/AshtonBars/status/2028612540444651995",
+    "score": 1,
+    "by": "sagebowsystem",
+    "time": 1772601289,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243295,
+    "title": "Mechanical Habits",
+    "url": "https://matklad.github.io/2025/12/06/mechanical-habits.html",
+    "score": 1,
+    "by": "r4um",
+    "time": 1772600646,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243266,
+    "title": "MIDI Viz Piano",
+    "url": "https://zz85.github.io/midiviz/midiviz_piano.html",
+    "score": 1,
+    "by": "memalign",
+    "time": 1772600403,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243251,
+    "title": "Windows 12 Reportedly Set for Release This Year",
+    "url": "https://tech4gamers.com/windows-12-reportedly-relasing-2026-modular-ai-focused-os/",
+    "score": 1,
+    "by": "ryandrake",
+    "time": 1772600135,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243218,
+    "title": "Merge PDF",
+    "url": "https://www.pdffixnow.com/merge-pdf",
+    "score": 1,
+    "by": "instahotstar",
+    "time": 1772599846,
+    "descendants": 2,
+    "text": ""
+  },
+  {
+    "id": 47243851,
+    "title": "Oval – Native macOS client for Open WebUI with on-device voice mode",
+    "url": "https://github.com/shreyaspapi/Oval",
+    "score": 1,
+    "by": "shreyaspapi",
+    "time": 1772605436,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47243190,
+    "title": "I got tired of rewriting interview questions for every candidate,so I built this",
+    "url": "https://recruitlens.io/",
+    "score": 1,
+    "by": "elminson",
+    "time": 1772599665,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47243188,
+    "title": "I built a collection of privacy-focused browser tools (no uploads)",
+    "url": "https://everytool.solutions/",
+    "score": 1,
+    "by": "Mihir1426",
+    "time": 1772599634,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243186,
+    "title": "MachineAuth: Open source Authentication infrastructure for AI agents",
+    "url": "https://github.com/mandarwagh9/MachineAuth",
+    "score": 1,
+    "by": "mandarwagh",
+    "time": 1772599618,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47243148,
+    "title": "I Have No Mouth",
+    "url": "https://www.leemeichin.com/posts/i-have-no-mouth",
+    "score": 1,
+    "by": "freediver",
+    "time": 1772599339,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243184,
+    "title": "Rust zero-cost abstractions vs. SIMD",
+    "url": "https://turbopuffer.com/blog/zero-cost",
+    "score": 1,
+    "by": "whiteros_e",
+    "time": 1772599594,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243124,
+    "title": "Show HN: Claude-brain – Sync your Claude Code brain across machines via Git",
+    "url": "https://github.com/toroleapinc/claude-brain",
+    "score": 1,
+    "by": "edvatar",
+    "time": 1772599138,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243101,
+    "title": "GitNexus: The Zero-Server Code Intelligence Engine",
+    "url": "https://github.com/abhigyanpatwari/GitNexus",
+    "score": 1,
+    "by": "mpweiher",
+    "time": 1772598962,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243087,
+    "title": "The Modular Phone of the Future [video]",
+    "url": "https://www.youtube.com/watch?v=tQn8X6l3-ig",
+    "score": 1,
+    "by": "mgh2",
+    "time": 1772598780,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243048,
+    "title": "Ask HN: Transforming My Resumé for the Age of AI",
+    "url": "https://news.ycombinator.com/item?id=47243048",
+    "score": 1,
+    "by": "metadat",
+    "time": 1772598379,
+    "descendants": 0,
+    "text": "Now that array of language expertise and distributed systems stuff is no longer impressive or a strong signal, how should I reframe my 20+ years of programming and management experience?  Should I go higher level and focus only on business impact and drop the technical aspects?"
+  },
+  {
+    "id": 47243035,
+    "title": "Pixel homescreens get custom icons, but Google's keeping them locked to AI",
+    "url": "https://9to5google.com/2026/03/03/pixel-homescreens-are-getting-custom-icons-but-googles-keeping-them-locked-to-ai/",
+    "score": 1,
+    "by": "josephcsible",
+    "time": 1772598315,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242966,
+    "title": "Been building the world labs of the enterprise space",
+    "url": "https://www.loom.com/share/ecf98b88c6c746f082a2c121c6015398",
+    "score": 1,
+    "by": "tjarzu",
+    "time": 1772597542,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242856,
+    "title": "Pipe: Pubsub without the infrastructure. stream data between machines using SSH",
+    "url": "https://pipe.pico.sh/",
+    "score": 1,
+    "by": "thunderbong",
+    "time": 1772596506,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242896,
+    "title": "Show HN: I wrote a dictionary of the 185 verbs Claude shows while thinking",
+    "url": "https://github.com/paolobozzola/spinner-verbs-dictionary",
+    "score": 1,
+    "by": "paolobozzola",
+    "time": 1772596856,
+    "descendants": 0,
+    "text": "Fun project, made with Claude Code by a Claude Code lover"
+  },
+  {
+    "id": 47243132,
+    "title": "The GPT-3.5 Era: A Retrospective on 404s, Biometric Clocks, and $400 Bills",
+    "url": "https://chippytime.com/gpt3-story",
+    "score": 1,
+    "by": "chippytech",
+    "time": 1772599233,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47243307,
+    "title": "Post-AI World: Notes on Economy, Meaning, Agency",
+    "url": "https://yashmouje.com/blog/post-ai-world",
+    "score": 1,
+    "by": "yashmouje",
+    "time": 1772600710,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242787,
+    "title": "Outlit Customer Context Layer",
+    "url": "https://docs.outlit.ai",
+    "score": 1,
+    "by": "handfuloflight",
+    "time": 1772595885,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242723,
+    "title": "Show HN: Display folder sizes in Win11 Explorer's Size column",
+    "url": "https://github.com/sm18lr88/win-folder-size",
+    "score": 1,
+    "by": "hereme888",
+    "time": 1772595356,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242813,
+    "title": "Sitescroll",
+    "url": "https://sitescroll.fun/",
+    "score": 1,
+    "by": "netule",
+    "time": 1772596095,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242775,
+    "title": "Lock Scroll with a Vengeance",
+    "url": "https://unsung.aresluna.org/lock-scroll-with-a-vengeance/",
+    "score": 1,
+    "by": "etothet",
+    "time": 1772595737,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242660,
+    "title": "Couldn't find a minimal session indicator for tmux, so I built one",
+    "url": "https://github.com/jtmcginty/tmux-session-dots",
+    "score": 1,
+    "by": "jtmcginty",
+    "time": 1772594807,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242545,
+    "title": "Extending the Demo: Destruction Derby",
+    "url": "https://32bits.substack.com/p/extending-the-demo-destruction-derby",
+    "score": 1,
+    "by": "farmerbb",
+    "time": 1772593974,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242488,
+    "title": "MoneyCollect provides warm and human-centered payment protection for merchants",
+    "url": "https://www.moneycollect.com/",
+    "score": 1,
+    "by": "jerryoverwrite",
+    "time": 1772593560,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242439,
+    "title": "New Python library by Guido van Rossum",
+    "url": "https://github.com/microsoft/typeagent-py",
+    "score": 1,
+    "by": "tzury",
+    "time": 1772593111,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242815,
+    "title": "Show HN: Atlas – Portfolio health dashboard for multi-repo teams (Python CLI)",
+    "url": "https://github.com/nxtg-ai/repoatlas",
+    "score": 1,
+    "by": "vipdestiny",
+    "time": 1772596099,
+    "descendants": 0,
+    "text": "I manage 8+ mixed repos (prod, dev, poc) across Python, TypeScript, and Rust. Every dev tool I use -- Cursor, Copilot, Claude Code -- is great inside a single repo. But none of them answer the cross-cutting questions:<p>Which repos have zero tests?\n- Are my React versions consistent across 3 frontends?\n- Which project hasn&#x27;t been committed to in weeks?\n- Where am I duplicating FastAPI patterns instead of sharing a library?<p>I got tired of manually checking, so I built Atlas. It&#x27;s a Python CLI that scans your repos locally and gives you a portfolio-level health dashboard.<p>What it does\nPoint it at your projects, run atlas scan, and you get this:<p><pre><code>  pip install nxtg-atlas\n\n  atlas init --name &quot;My Portfolio&quot;\n  atlas add ~&#x2F;projects&#x2F;api\n  atlas add ~&#x2F;projects&#x2F;frontend\n  atlas scan\n  atlas status\n</code></pre>\nReal output from my 8 production repos:<p>+---------+--------------------+----------+--------+----------+---------------------+\n|         | Project            | Health   |  Tests |      LOC | Tech Stack          |\n+---------+--------------------+----------+--------+----------+---------------------+\n| (green) | Dx3                |  A 94%   |    179 |  164,806 | Python . TypeScript |\n| (green) | content-engine     |  B+ 88%  |     23 |   12,552 | Python              |\n| (green) | Podcast-Pipeline   |  B+ 88%  |     49 |   33,680 | Python . FastAPI    |\n| (green) | nxtg.ai            |  B+ 87%  |     36 |   49,938 | TypeScript . Next.js|\n| (green) | Faultline          |  B+ 86%  |     29 |   15,527 | TypeScript . React  |\n| (green) | voice-jib-jab      |  B+ 86%  |     58 |   45,311 | TypeScript . Python |\n| (yellow)| SynApps            |  C 67%   |    114 |  793,406 | Python . TypeScript |\n| (red)   | NXTG-Forge         |  D 59%   |    121 |  136,083 | TypeScript . Rust   |\n+---------+--------------------+----------+--------+----------+---------------------+<p>8 Projects | 609 Test Files | 1,251,303 LOC | Scanned in 31 seconds\nThat&#x27;s not a mockup. That&#x27;s the actual output from scanning our production portfolio. The C and D grades were embarrassing -- but that&#x27;s the point. You can&#x27;t fix what you can&#x27;t see.<p>How health scoring works\nEach project gets an A-F grade based on 4 weighted dimensions:<p>- Tests (35%) -- test file count relative to source files\n - Structure (25%) -- CI&#x2F;CD, .gitignore, package config, linting, source organization\n - Git Hygiene (20%) -- commit history, remote status, clean working tree\n - Documentation (20%) -- README, CHANGELOG, docs&#x2F;, etc.<p>Cross-project intelligence\nThis is where it gets interesting. Atlas compares deps and versions across all your repos:<p>- Shared dependencies (fastapi used in 4 projects, react in 3)\n - Version mismatches (react ^18.2.0 in one app, ^19.2.1 in another)\n - Health gaps (3 projects with zero tests, 1 with 50+ uncommitted changes)\n - These are the things that bite you six months from now.<p>What it is NOT\n - Not a cloud service. Zero network calls, no telemetry, no accounts.\n - Not a linter or code quality tool. It doesn&#x27;t read your source code line by line.\n - Not a replacement for SonarQube &#x2F; CodeClimate. Those go deep on one repo. Atlas goes wide across many.<p>Details\n - Python 3.11+, built with Typer + Rich\n - State is a single JSON file at ~&#x2F;.atlas&#x2F;portfolio.json\n - Detects 10+ languages, 15+ frameworks, 5+ databases\n - MIT license, 100% open source — no tiers, no limits, no feature gates\n - Everything works: unlimited projects, cross-project intelligence, export, batch-add<p>--&gt; GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;nxtg-ai&#x2F;repoatlas\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;nxtg-ai&#x2F;repoatlas</a>\n--&gt; PyPI: <a href=\"https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;nxtg-atlas&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;nxtg-atlas&#x2F;</a><p>If atlas saves you time, consider supporting development.<p>Happy to answer questions about the scoring algorithm, the detection heuristics, or how we&#x27;re using it internally."
+  },
+  {
+    "id": 47242355,
+    "title": "We are now on Substack Give us a follow",
+    "url": "https://substack.com/profile/387803331-pcg-inc/note/c-222710211",
+    "score": 1,
+    "by": "CCK80LLC",
+    "time": 1772592294,
+    "descendants": 0,
+    "text": ""
+  },
+  {
+    "id": 47242343,
+    "title": "An AI Just Did Everything I Do on a Computer – Written by the AI Itself",
+    "url": "https://coasty.ai/",
+    "score": 1,
+    "by": "PrateekJ17",
+    "time": 1772592190,
+    "descendants": 1,
+    "text": ""
+  },
+  {
+    "id": 47242324,
+    "title": "Oscar Six Radar – vulnerability scanner with native A2A (agent-to-agent) support",
+    "url": "https://news.ycombinator.com/item?id=47242324",
+    "score": 1,
+    "by": "oscarsixsecllc",
+    "time": 1772592041,
+    "descendants": 0,
+    "text": "Hey HN,<p>I&#x27;m Randy, founder of Oscar Six Security. We build vulnerability scanning tools for small businesses and MSPs.<p>Today I&#x27;m sharing something I&#x27;m genuinely excited about: we shipped native support for Google&#x27;s A2A (Agent-to-Agent) protocol in our Radar scanner. Here&#x27;s what that actually means in practice:<p>An AI agent — anything built on Google ADK, LangChain, CrewAI, or any A2A-compatible framework — can now:<p>1. Discover Radar&#x27;s capabilities via our agent card at &#x2F;.well-known&#x2F;agent.json\n2. Initiate payment via Stripe SPT or saved payment method (no human credit card entry)\n3. Submit a domain for scanning\n4. Poll for results and receive a structured vulnerability report<p>The entire vulnerability scanning lifecycle, with no human in the loop.<p>We handle domain verification before any scan runs — DNS challenge or web-based fallback — which an agent can resolve programmatically. Tier 1 pre-verified domains skip verification entirely.<p>Why build this now? We think security tooling is about to go agent-native fast. If your SOC automation or compliance pipeline runs on AI agents, having to context-switch to a browser portal to run a scan is a UX cliff. We&#x27;re removing that cliff.<p>Scans are $99. The A2A endpoint is live today.<p>Technical details: JSON-RPC 2.0, agent card at &#x2F;.well-known&#x2F;agent.json, tiered domain verification (pre-verified &#x2F; DNS challenge &#x2F; web fallback).<p>Blog post with full technical walkthrough:\nhttps:&#x2F;&#x2F;blog.oscarsixsecurityllc.com&#x2F;blog&#x2F;oscar-six-radar-a2a-agent-to-agent-vulnerability-scanning?utm_source=hackernews&amp;utm_medium=social&amp;utm_campaign=a2a_announcement<p>Platform:\nhttps:&#x2F;&#x2F;radar.oscarsixsecurityllc.com&#x2F;?utm_source=hackernews&amp;utm_medium=social&amp;utm_campaign=a2a_announcement<p>Happy to go deep on the implementation, the A2A spec, or the domain verification design. Ask anything."
+  }
+]
