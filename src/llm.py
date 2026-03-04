@@ -1,48 +1,74 @@
+# src/llm.py
 import os
 import json
-from openai import OpenAI  # 导入OpenAI库用于访问GPT模型
-from logger import LOG  # 导入日志模块
+from datetime import datetime
+from openai import OpenAI
+from logger import LOG
+
 
 class LLM:
     def __init__(self):
-        # 创建一个OpenAI客户端实例
         self.client = OpenAI()
-        # 从TXT文件加载提示信息
-        with open("prompts/report_prompt.txt", "r", encoding='utf-8') as file:
-            self.system_prompt = file.read()
 
-    def generate_daily_report(self, markdown_content, dry_run=False):
-        # 使用从TXT文件加载的提示信息
+        # 加载所有提示词
+        self.system_prompts = {}
+
+        # 加载GitHub报告提示词
+        try:
+            with open("prompts/report_prompt.txt", "r", encoding='utf-8') as file:
+                self.system_prompts['github'] = file.read()
+            LOG.info("已加载GitHub报告提示词")
+        except Exception as e:
+            LOG.error(f"加载GitHub提示词失败: {e}")
+            self.system_prompts['github'] = ""  # 如果文件不存在，使用空字符串
+
+        # 加载HackerNews报告提示词
+        try:
+            with open("prompts/hackernews_prompt.txt", "r", encoding='utf-8') as file:
+                self.system_prompts['hackernews'] = file.read()
+            LOG.info("已加载HackerNews报告提示词")
+        except Exception as e:
+            LOG.error(f"加载HackerNews提示词失败: {e}")
+            self.system_prompts['hackernews'] = ""  # 如果文件不存在，使用空字符串
+
+    def generate_daily_report(self, content, report_type='github', dry_run=False):
+        """
+        生成报告
+
+        Args:
+            content: 用户消息内容
+            report_type: 报告类型，'github' 或 'hackernews'，默认为 'github'
+            dry_run: 是否为试运行模式
+        """
+        # 根据 report_type 选择对应的系统提示词
+        system_prompt = self.system_prompts.get(report_type, "")
+
+        if not system_prompt:
+            LOG.error(f"未找到 {report_type} 类型的提示词文件")
+            return f"错误：无法生成{report_type}报告，提示词文件不存在"
+
         messages = [
-            {"role": "system", "content": self.system_prompt},
-            {"role": "user", "content": markdown_content},
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": content},
         ]
 
         if dry_run:
-            # 如果启用了dry_run模式，将不会调用模型，而是将提示信息保存到文件中
-            LOG.info("Dry run mode enabled. Saving prompt to file.")
-            with open("daily_progress/prompt.txt", "w+") as f:
-                # 格式化JSON字符串的保存
+            LOG.info(f"Dry run mode enabled for {report_type} report. Saving prompt to file.")
+            filename = f"daily_progress/prompt_{report_type}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+            os.makedirs('daily_progress', exist_ok=True)
+            with open(filename, "w+", encoding='utf-8') as f:
                 json.dump(messages, f, indent=4, ensure_ascii=False)
-            LOG.debug("Prompt已保存到 daily_progress/prompt.txt")
-
             return "DRY RUN"
 
-        # 日志记录开始生成报告
-        LOG.info("使用 GPT 模型开始生成报告。")
-        
-        try:
-            # 调用OpenAI GPT模型生成报告
-            response = self.client.chat.completions.create(
-                model="deepseek-chat",  # 建议换模型
-                messages=messages,
-                temperature=0.3  # 降低发散
-            )
-            LOG.debug("deepseek response: {}", response)
+        LOG.info(f"使用模型开始生成{report_type}报告。")
 
-            # 返回模型生成的内容
+        try:
+            response = self.client.chat.completions.create(
+                model="deepseek-chat",
+                messages=messages,
+                temperature=0.3
+            )
             return response.choices[0].message.content
         except Exception as e:
-            # 如果在请求过程中出现异常，记录错误并抛出
             LOG.error(f"生成报告时发生错误：{e}")
             raise

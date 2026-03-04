@@ -1,38 +1,118 @@
-import shlex  # 导入shlex库，用于正确解析命令行输入
+# github_sentinel_cli.py
+import shlex
+import sys
 
-from config import Config  # 从config模块导入Config类，用于配置管理
-from github_client import GitHubClient  # 从github_client模块导入GitHubClient类，用于GitHub API操作
-from report_generator import ReportGenerator  # 从report_generator模块导入ReportGenerator类，用于报告生成
-from llm import LLM  # 从llm模块导入LLM类，可能用于语言模型相关操作
-from subscription_manager import SubscriptionManager  # 从subscription_manager模块导入SubscriptionManager类，管理订阅
-from command_handler import CommandHandler  # 从command_handler模块导入CommandHandler类，处理命令行命令
-from logger import LOG  # 从logger模块导入LOG对象，用于日志记录
+from config import Config
+from github_client import GitHubClient
+from hackernews_client import HackerNewsClient
+from report_generator import ReportGenerator
+from hackernews_report_generator import HackerNewsReportGenerator
+from llm import LLM
+from subscription_manager import SubscriptionManager
+from command_handler import CommandHandler
+from hackernews_command_handler import HackerNewsCommandHandler
+from logger import LOG
+
+
+def print_banner():
+    """打印欢迎横幅"""
+    banner = """
+╔══════════════════════════════════════════════════════════╗
+║                 GitHubSentinel CLI v2.0                  ║
+║              GitHub监控 & HackerNews趋势分析              ║
+╚══════════════════════════════════════════════════════════╝
+    """
+    print(banner)
+
 
 def main():
-    config = Config()  # 创建配置实例
-    github_client = GitHubClient(config.github_token)  # 创建GitHub客户端实例
-    llm = LLM()  # 创建语言模型实例
-    report_generator = ReportGenerator(llm)  # 创建报告生成器实例
-    subscription_manager = SubscriptionManager(config.subscriptions_file)  # 创建订阅管理器实例
-    command_handler = CommandHandler(github_client, subscription_manager, report_generator)  # 创建命令处理器实例
-    
-    parser = command_handler.parser  # 获取命令解析器
-    command_handler.print_help()  # 打印帮助信息
+    print_banner()
+
+    # 加载配置
+    config = Config()
+
+    # 创建各组件实例
+    github_client = GitHubClient(config.github_token)
+    hackernews_client = HackerNewsClient()
+    llm = LLM()
+
+    github_report_generator = ReportGenerator(llm)
+    hackernews_report_generator = HackerNewsReportGenerator(llm)
+
+    subscription_manager = SubscriptionManager(config.subscriptions_file)
+
+    # 创建命令处理器
+    github_command_handler = CommandHandler(github_client, subscription_manager, github_report_generator)
+    hackernews_command_handler = HackerNewsCommandHandler(hackernews_client, hackernews_report_generator, config)
+
+    # 设置主解析器
+    parser = github_command_handler.parser
+    subparsers = parser._subparsers._actions[-1]
+
+    # 添加HackerNews命令
+    hackernews_command_handler.setup_parser(subparsers)
+
+    # 添加新的帮助信息
+    parser.description = """
+GitHub Sentinel 命令行工具
+
+可用命令分类:
+  📚 GitHub命令: help, list, add, remove, report, daily
+  🔥 HackerNews命令: hn fetch, hn report, hn config, hn stats
+  💡 其他命令: help, exit, quit
+
+使用 'help' 查看详细帮助，'help <命令>' 查看特定命令的帮助
+    """
+
+    # 打印帮助信息
+    github_command_handler.print_help()
+    print("\n🔥 HackerNews 命令:")
+    print("  hn fetch -H 24 -s 50 -k AI,Python    获取最近24小时热度>50且包含AI/Python的文章")
+    print("  hn report -H 24 -o report.md         生成最近24小时的趋势报告")
+    print("  hn config --show                      显示HackerNews配置")
+    print("  hn stats -H 48                         显示最近48小时的统计信息")
+    print()
 
     while True:
         try:
-            user_input = input("GitHub Sentinel> ")  # 等待用户输入
-            if user_input in ['exit', 'quit']:  # 如果输入为退出命令，则结束循环
+            user_input = input("GitHub Sentinel> ").strip()
+
+            if not user_input:
+                continue
+
+            if user_input in ['exit', 'quit']:
+                print("👋 再见!")
                 break
+
+            if user_input == 'help':
+                parser.print_help()
+                continue
+
             try:
-                args = parser.parse_args(shlex.split(user_input))  # 解析用户输入的命令
-                if args.command is None:  # 如果没有命令被解析，则继续循环
+                args = parser.parse_args(shlex.split(user_input))
+
+                if hasattr(args, 'command') and args.command is None:
                     continue
-                args.func(args)  # 执行对应的命令函数
-            except SystemExit as e:  # 捕获由于错误命令引发的异常
-                LOG.error("Invalid command. Type 'help' to see the list of available commands.")
+
+                if hasattr(args, 'func'):
+                    args.func(args)
+                else:
+                    print("❌ 未知命令。使用 'help' 查看可用命令。")
+
+            except SystemExit:
+                # argparse在错误时会抛出SystemExit，我们捕获它但不退出程序
+                pass
+            except Exception as e:
+                LOG.error(f"命令执行错误: {e}")
+                print(f"❌ 命令执行失败: {e}")
+
+        except KeyboardInterrupt:
+            print("\n👋 再见!")
+            break
         except Exception as e:
-            LOG.error(f"Unexpected error: {e}")  # 记录其他未预期的错误
+            LOG.error(f"意外错误: {e}")
+            print(f"❌ 意外错误: {e}")
+
 
 if __name__ == '__main__':
-    main()  # 如果直接运行该文件，则执行main函数
+    main()

@@ -1,4 +1,6 @@
-[
-    "ollama/ollama",
-    "vllm-project/vllm"
-]
+{
+    "github": [
+        "ollama/ollama",
+        "vllm-project/vllm"
+    ]
+}

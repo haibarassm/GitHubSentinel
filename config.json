@@ -1,6 +1,18 @@
 {
-    "github_token": "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",
-    "email":  {
+    "github_token": "",
+    "github_enabled": false,
+    "github_progress_frequency_days": 1,
+    "github_progress_execution_time": "08:00",
+
+    "hackernews_enabled": true,
+    "hackernews_frequency_hours": 6,
+    "hackernews_execution_time": "10:00",
+    "hackernews_time_range_hours": 24,
+    "hackernews_min_score": 50,
+    "hackernews_max_stories": 100,
+    "hackernews_keywords": ["AI", "机器学习", "Python", "云计算", "大模型"],
+
+    "email": {
         "smtp_server": "smtp.qq.com",
         "smtp_port": 465,
         "from": "846365350@qq.com",
@@ -8,7 +20,5 @@
         "to": "haibarassm@163.com"
     },
     "slack_webhook_url": "your_slack_webhook_url",
-    "subscriptions_file": "subscriptions.json",
-    "github_progress_frequency_days": 1,
-    "github_progress_execution_time":"08:00"
+    "subscriptions_file": "subscriptions.json"
 }
