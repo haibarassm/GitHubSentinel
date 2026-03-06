@@ -88,6 +88,39 @@ class ReportGenerator:
                     markdown_content += file.read() + "\n"
         return markdown_content
 
+    def generate_arxiv_report(self, markdown_file_path):
+        """
+        生成 arXiv 论文报告，并保存为 arxiv_report_{date}.md。
+
+        :param markdown_file_path: arXiv论文数据文件路径
+        :return: (报告内容, 报告文件路径)
+        """
+        with open(markdown_file_path, 'r', encoding='utf-8') as file:
+            markdown_content = file.read()
+
+        system_prompt = self.prompts.get("arxiv")
+        report = self.llm.generate_report(system_prompt, markdown_content)
+
+        # 生成按日期命名的报告文件
+        from datetime import datetime
+        date_str = datetime.now().strftime('%Y-%m-%d')
+        report_filename = f"arxiv_report_{date_str}.md"
+        report_file_path = os.path.join("reports", report_filename)
+
+        os.makedirs("reports", exist_ok=True)
+
+        # 在报告前添加标题和日期
+        full_report = f"# arXiv Papers Technical Trend Report\n"
+        full_report += f"Date: {date_str}\n\n"
+        full_report += "---\n\n"
+        full_report += report
+
+        with open(report_file_path, 'w', encoding='utf-8') as report_file:
+            report_file.write(full_report)
+
+        LOG.info(f"arXiv 论文报告已保存到 {report_file_path}")
+        return report, report_file_path
+
 
 if __name__ == '__main__':
     from config import Config  # 导入配置管理类

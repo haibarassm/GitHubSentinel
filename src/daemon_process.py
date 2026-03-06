@@ -8,6 +8,7 @@ from datetime import datetime  # 导入 datetime 模块用于获取当前日期
 from config import Config  # 导入配置管理类
 from github_client import GitHubClient  # 导入GitHub客户端类，处理GitHub API请求
 from hacker_news_client import HackerNewsClient
+from arxiv_client import ArxivClient  # 导入arXiv客户端类
 from notifier import Notifier  # 导入通知器类，用于发送通知
 from report_generator import ReportGenerator  # 导入报告生成器类
 from llm import LLM  # 导入语言模型类，可能用于生成报告内容
@@ -51,6 +52,21 @@ def hn_daily_job(hacker_news_client, report_generator, notifier):
     notifier.notify_hn_report(date, report)
     LOG.info(f"[定时任务执行完毕]")
 
+def arxiv_daily_job(arxiv_client, report_generator, notifier):
+    LOG.info("[开始执行定时任务]arXiv 论文技术趋势")
+    # 获取近1天的arXiv论文
+    filepath, papers = arxiv_client.export_papers_by_days(days=1)
+
+    if filepath and papers:
+        # 生成arXiv论文报告
+        report, report_path = report_generator.generate_arxiv_report(filepath)
+        # 发送通知
+        date = datetime.now().strftime('%Y-%m-%d')
+        notifier.notify_arxiv_report(date, report, len(papers))
+        LOG.info(f"[定时任务执行完毕] 获取到 {len(papers)} 篇论文")
+    else:
+        LOG.info("[定时任务执行完毕] 没有获取到符合条件的论文")
+
 
 def main():
     # 设置信号处理器
@@ -59,6 +75,7 @@ def main():
     config = Config()  # 创建配置实例
     github_client = GitHubClient(config.github_token)  # 创建GitHub客户端实例
     hacker_news_client = HackerNewsClient() # 创建 Hacker News 客户端实例
+    arxiv_client = ArxivClient()  # 创建arXiv客户端实例
     notifier = Notifier(config.email)  # 创建通知器实例
     llm = LLM(config)  # 创建语言模型实例
     report_generator = ReportGenerator(llm, config.report_types)  # 创建报告生成器实例
@@ -66,7 +83,8 @@ def main():
 
     # 启动时立即执行（如不需要可注释）
     # github_job(subscription_manager, github_client, report_generator, notifier, config.freq_days)
-    hn_daily_job(hacker_news_client, report_generator, notifier)
+    # hn_daily_job(hacker_news_client, report_generator, notifier)
+    # arxiv_daily_job(arxiv_client, report_generator, notifier)
 
     # 安排 GitHub 的定时任务
     schedule.every(config.freq_days).days.at(
@@ -78,6 +96,9 @@ def main():
 
     # 安排 hn_daily_job 每天早上10点执行一次
     schedule.every().day.at("10:00").do(hn_daily_job, hacker_news_client, report_generator, notifier)
+
+    # 安排 arxiv_daily_job 每天早上9点45分执行一次
+    schedule.every().day.at("09:45").do(arxiv_daily_job, arxiv_client, report_generator, notifier)
 
     try:
         # 在守护进程中持续运行
