@@ -64,14 +64,18 @@ class TestHackerNewsClient(unittest.TestCase):
         </tr>
         '''
         mock_get.return_value = mock_response
-        
+
         # 调用方法
         file_path = self.client.export_top_stories(date="2024-09-01", hour="14")
-        
-        # 验证目录和文件创建
-        mock_makedirs.assert_called_once_with('hacker_news/2024-09-01', exist_ok=True)
-        mock_open.assert_called_once_with('hacker_news/2024-09-01/14.md', 'w')
-        
+
+        # 验证目录和文件创建（使用os.path.normpath处理Windows路径）
+        import os
+        expected_dir = os.path.normpath('hacker_news/2024-09-01')
+        mock_makedirs.assert_called_once_with(expected_dir, exist_ok=True)
+
+        expected_file = os.path.normpath('hacker_news/2024-09-01/14.md')
+        mock_open.assert_called_once_with(expected_file, 'w')
+
         # 验证文件内容
         mock_open().write.assert_any_call("# Hacker News Top Stories (2024-09-01 14:00)\n\n")
         mock_open().write.assert_any_call("1. [Story 1](https://news.ycombinator.com/)\n")

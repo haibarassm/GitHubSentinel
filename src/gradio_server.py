@@ -78,7 +78,7 @@ def update_model_list(model_type):
     if model_type == "openai":
         return gr.Dropdown(choices=["deepseek-chat", "deepseek-coder"], label="选择模型")
     elif model_type == "ollama":
-        return gr.Dropdown(choices=["llama3.1", "gemma2:2b", "qwen2:7b"], label="选择模型")
+        return gr.Dropdown(choices=["llama3.1:8b", "gemma2:2b", "qwen2:7b"], label="选择模型")
 
 
 # 创建 Gradio 界面
