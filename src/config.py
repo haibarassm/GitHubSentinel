@@ -47,6 +47,13 @@ class Config:
             self.freq_days = self.github_freq_days
             self.exec_time = self.github_exec_time
 
+            # 加载 LLM 相关配置
+            llm_config = config.get('llm', {})
+            self.llm_model_type = llm_config.get('model_type', 'openai')
+            self.openai_model_name = llm_config.get('openai_model_name', 'gpt-4o-mini')
+            self.ollama_model_name = llm_config.get('ollama_model_name', 'llama3')
+            self.ollama_api_url = llm_config.get('ollama_api_url', 'http://localhost:11434/api/chat')
+
             LOG.info("配置加载成功")
             LOG.info(f"GitHub监控: {'启用' if self.github_enabled else '禁用'}")
             LOG.info(f"HackerNews监控: {'启用' if self.hackernews_enabled else '禁用'}")

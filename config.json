@@ -20,5 +20,11 @@
         "to": "haibarassm@163.com"
     },
     "slack_webhook_url": "your_slack_webhook_url",
-    "subscriptions_file": "subscriptions.json"
+    "subscriptions_file": "subscriptions.json",
+    "llm": {
+        "model_type": "ollama",
+        "openai_model_name": "gpt-4o-mini",
+        "ollama_model_name": "llama3",
+        "ollama_api_url": "http://localhost:11434/api/chat"
+    }
 }

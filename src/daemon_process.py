@@ -101,7 +101,7 @@ def main():
     github_client = GitHubClient(config.github_token)
     hackernews_client = HackerNewsClient()
     notifier = Notifier(config.email)
-    llm = LLM()
+    llm = LLM(config)
 
     github_report_generator = ReportGenerator(llm)
     hackernews_report_generator = HackerNewsReportGenerator(llm)

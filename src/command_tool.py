@@ -34,7 +34,7 @@ def main():
     # 创建各组件实例
     github_client = GitHubClient(config.github_token)
     hackernews_client = HackerNewsClient()
-    llm = LLM()
+    llm = LLM(config)
 
     github_report_generator = ReportGenerator(llm)
     hackernews_report_generator = HackerNewsReportGenerator(llm)
